@@ -1,0 +1,8 @@
+.. include:: LIFCL-40.rst
+.. include:: xc7a100t.rst
+.. include:: xc7a200t.rst
+.. include:: xc7a35t.rst
+.. include:: xc7k480t.rst
+.. include:: xc7vx980t.rst
+.. include:: xc7z010.rst
+.. include:: xczu7ev.rst

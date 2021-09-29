@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>LIFCL-40 &#8212; fpga-interchange-tests 0.1 documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/material-icons.css" />
+    <link rel="stylesheet" href="_static/notosanscjkjp.css" type="text/css" />
+    <link rel="stylesheet" href="_static/roboto.css" type="text/css" />
+    <link rel="stylesheet" href="_static/material-design-lite-1.3.0/material.deep_purple-purple.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx_materialdesign_theme.css" type="text/css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_materialdesign_theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer"><header class="mdl-layout__header mdl-layout__header--waterfall ">
+    <div class="mdl-layout__header-row">
+        
+        <nav class="mdl-navigation breadcrumb">
+            <a class="mdl-navigation__link is-active">LIFCL-40</a>
+        </nav>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+        
+<form class="form-inline pull-sm-right" action="search.html" method="get">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+        <label id="quick-search-icon" class="mdl-button mdl-js-button mdl-button--icon"  for="waterfall-exp">
+            <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="q"  id="waterfall-exp" placeholder="Search" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </div>
+      </div>
+      <div class="mdl-tooltip" data-mdl-for="quick-search-icon">
+      Quick search
+      </div>
+</form>
+        
+<a id="button-show-source"
+    class="mdl-button mdl-js-button mdl-button--icon"
+    href="_sources/devices.rst.txt" rel="nofollow">
+<i class="material-icons">code</i>
+</a>
+<div class="mdl-tooltip" data-mdl-for="button-show-source">
+Show Source
+</div>
+        </nav>
+    </div>
+    <div class="mdl-layout__header-row header-links">
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+          <a  class="mdl-navigation__link" href="index.html">
+                  <i class="material-icons navigation-link-icon">home</i>
+                  Home
+              </a>
+          
+              <a  class="mdl-navigation__link" href="https://github.com/SymbiFlow/fpga-interchange-tests">
+                  <i class="material-icons navigation-link-icon">link</i>
+                  GitHub
+              </a>
+      </nav>
+    </div>
+</header><header class="mdl-layout__drawer">
+    
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="title" href="index.html">
+              <span class="title-text">
+                  fpga-interchange-tests
+              </span>
+          </a>
+      </span>
+    
+    
+      <div class="globaltoc">
+        <span class="mdl-layout-title toc">Table Of Contents</span>
+        
+        
+        <!-- Local TOC -->
+        <nav class="mdl-navigation"><ul>
+<li><a class="reference internal" href="#">LIFCL-40</a></li>
+<li><a class="reference internal" href="#xc7a100t">xc7a100t</a></li>
+<li><a class="reference internal" href="#xc7a200t">xc7a200t</a></li>
+<li><a class="reference internal" href="#xc7a35t">xc7a35t</a></li>
+<li><a class="reference internal" href="#xc7k480t">xc7k480t</a></li>
+<li><a class="reference internal" href="#xc7vx980t">xc7vx980t</a></li>
+<li><a class="reference internal" href="#xc7z010">xc7z010</a></li>
+<li><a class="reference internal" href="#xczu7ev">xczu7ev</a></li>
+</ul>
+</nav>
+        
+        </div>
+    
+</header>
+        <main class="mdl-layout__content" tabIndex="0">
+<header class="mdl-layout__drawer">
+    
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="title" href="index.html">
+              <span class="title-text">
+                  fpga-interchange-tests
+              </span>
+          </a>
+      </span>
+    
+    
+      <div class="globaltoc">
+        <span class="mdl-layout-title toc">Table Of Contents</span>
+        
+        
+        <!-- Local TOC -->
+        <nav class="mdl-navigation"><ul>
+<li><a class="reference internal" href="#">LIFCL-40</a></li>
+<li><a class="reference internal" href="#xc7a100t">xc7a100t</a></li>
+<li><a class="reference internal" href="#xc7a200t">xc7a200t</a></li>
+<li><a class="reference internal" href="#xc7a35t">xc7a35t</a></li>
+<li><a class="reference internal" href="#xc7k480t">xc7k480t</a></li>
+<li><a class="reference internal" href="#xc7vx980t">xc7vx980t</a></li>
+<li><a class="reference internal" href="#xc7z010">xc7z010</a></li>
+<li><a class="reference internal" href="#xczu7ev">xczu7ev</a></li>
+</ul>
+</nav>
+        
+        </div>
+    
+</header>
+
+    <div class="document">
+        <div class="page-content">
+        
+  <section id="lifcl-40">
+<h1>LIFCL-40<a class="headerlink" href="#lifcl-40" title="Permalink to this headline">¶</a></h1>
+<p>Designs support status</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Board</p></th>
+<th class="head"><p>Synthesis</p></th>
+<th class="head"><p>Logical netlist</p></th>
+<th class="head"><p>Place &amp; route (Physical netlist)</p></th>
+<th class="head"><p>FASM generation</p></th>
+<th class="head"><p>Bitstream (FASM generator)</p></th>
+<th class="head"><p>Simulation</p></th>
+<th class="head"><p>Post-synthesis simulation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>counter</p></td>
+<td><p>lifcl40evn</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>murax</p></td>
+<td><p>lifcl40evn</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>wire</p></td>
+<td><p>lifcl40evn</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+</tbody>
+</table>
+<p>CI performance graph</p>
+<a class="reference internal image-reference" href="_images/LIFCL-40-perf.svg"><img alt="_images/LIFCL-40-perf.svg" src="_images/LIFCL-40-perf.svg" width="400" /></a>
+</section>
+<section id="xc7a100t">
+<h1>xc7a100t<a class="headerlink" href="#xc7a100t" title="Permalink to this headline">¶</a></h1>
+<p>Designs support status</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Board</p></th>
+<th class="head"><p>Synthesis</p></th>
+<th class="head"><p>Logical netlist</p></th>
+<th class="head"><p>Place &amp; route (Physical netlist)</p></th>
+<th class="head"><p>FASM generation</p></th>
+<th class="head"><p>Bitstream (FASM generator)</p></th>
+<th class="head"><p>Simulation</p></th>
+<th class="head"><p>Post-synthesis simulation</p></th>
+<th class="head"><p>Bitstream (Vivado)</p></th>
+<th class="head"><p>Vivado checkpoint</p></th>
+<th class="head"><p>Bitstream (DCP)</p></th>
+<th class="head"><p>FASM bitstream vs. DCP bitstream</p></th>
+<th class="head"><p>FASM (fasm2bels)</p></th>
+<th class="head"><p>Vivado checkpoint (fasm2bels)</p></th>
+<th class="head"><p>Bitstream (fasm2bels DCP)</p></th>
+<th class="head"><p>fasm2bels bitstream vs. DCP Bitstream</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>counter</p></td>
+<td><p>arty100t</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>wire</p></td>
+<td><p>arty100t</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+</tbody>
+</table>
+<p>CI performance graph</p>
+<a class="reference internal image-reference" href="_images/xc7a100t-perf.svg"><img alt="_images/xc7a100t-perf.svg" src="_images/xc7a100t-perf.svg" width="400" /></a>
+</section>
+<section id="xc7a200t">
+<h1>xc7a200t<a class="headerlink" href="#xc7a200t" title="Permalink to this headline">¶</a></h1>
+<p>Designs support status</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Board</p></th>
+<th class="head"><p>Synthesis</p></th>
+<th class="head"><p>Logical netlist</p></th>
+<th class="head"><p>Place &amp; route (Physical netlist)</p></th>
+<th class="head"><p>FASM generation</p></th>
+<th class="head"><p>Bitstream (FASM generator)</p></th>
+<th class="head"><p>Simulation</p></th>
+<th class="head"><p>Post-synthesis simulation</p></th>
+<th class="head"><p>Bitstream (Vivado)</p></th>
+<th class="head"><p>Vivado checkpoint</p></th>
+<th class="head"><p>Bitstream (DCP)</p></th>
+<th class="head"><p>FASM bitstream vs. DCP bitstream</p></th>
+<th class="head"><p>FASM (fasm2bels)</p></th>
+<th class="head"><p>Vivado checkpoint (fasm2bels)</p></th>
+<th class="head"><p>Bitstream (fasm2bels DCP)</p></th>
+<th class="head"><p>fasm2bels bitstream vs. DCP Bitstream</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>wire</p></td>
+<td><p>nexys_video</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+</tbody>
+</table>
+<p>CI performance graph</p>
+<a class="reference internal image-reference" href="_images/xc7a200t-perf.svg"><img alt="_images/xc7a200t-perf.svg" src="_images/xc7a200t-perf.svg" width="400" /></a>
+</section>
+<section id="xc7a35t">
+<h1>xc7a35t<a class="headerlink" href="#xc7a35t" title="Permalink to this headline">¶</a></h1>
+<p>Designs support status</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Board</p></th>
+<th class="head"><p>Synthesis</p></th>
+<th class="head"><p>Logical netlist</p></th>
+<th class="head"><p>Place &amp; route (Physical netlist)</p></th>
+<th class="head"><p>FASM generation</p></th>
+<th class="head"><p>Bitstream (FASM generator)</p></th>
+<th class="head"><p>Simulation</p></th>
+<th class="head"><p>Post-synthesis simulation</p></th>
+<th class="head"><p>Bitstream (Vivado)</p></th>
+<th class="head"><p>Vivado checkpoint</p></th>
+<th class="head"><p>Bitstream (DCP)</p></th>
+<th class="head"><p>FASM bitstream vs. DCP bitstream</p></th>
+<th class="head"><p>FASM (fasm2bels)</p></th>
+<th class="head"><p>Vivado checkpoint (fasm2bels)</p></th>
+<th class="head"><p>Bitstream (fasm2bels DCP)</p></th>
+<th class="head"><p>fasm2bels bitstream vs. DCP Bitstream</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>clock_gen</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>FAILED</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>counter</p></td>
+<td><p>arty35t</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>counter</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>ibufds</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>iobuf</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>iobufds</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>litex_base</p></td>
+<td><p>arty35t</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>lut</p></td>
+<td><p>arty35t</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>mmcm_buf_fb</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>mmcm_ext_fb</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>mmcm_int_fb</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>mmcm_int_fb_frac</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>murax</p></td>
+<td><p>arty35t</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>murax</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>obufds</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>obuft</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>obuftds</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>pll_buf_fb</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>pll_int_fb</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>ram</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>ram36</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>ram_36bit</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>serdes</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>wire</p></td>
+<td><p>arty35t</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-even"><td><p>wire</p></td>
+<td><p>basys3</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+</tbody>
+</table>
+<p>CI performance graph</p>
+<a class="reference internal image-reference" href="_images/xc7a35t-perf.svg"><img alt="_images/xc7a35t-perf.svg" src="_images/xc7a35t-perf.svg" width="400" /></a>
+</section>
+<section id="xc7k480t">
+<h1>xc7k480t<a class="headerlink" href="#xc7k480t" title="Permalink to this headline">¶</a></h1>
+<p>Designs support status</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Board</p></th>
+<th class="head"><p>Synthesis</p></th>
+<th class="head"><p>Logical netlist</p></th>
+<th class="head"><p>Place &amp; route (Physical netlist)</p></th>
+<th class="head"><p>FASM generation</p></th>
+<th class="head"><p>Bitstream (FASM generator)</p></th>
+<th class="head"><p>Simulation</p></th>
+<th class="head"><p>Post-synthesis simulation</p></th>
+<th class="head"><p>Bitstream (Vivado)</p></th>
+<th class="head"><p>Vivado checkpoint</p></th>
+<th class="head"><p>Bitstream (DCP)</p></th>
+<th class="head"><p>FASM bitstream vs. DCP bitstream</p></th>
+<th class="head"><p>FASM (fasm2bels)</p></th>
+<th class="head"><p>Vivado checkpoint (fasm2bels)</p></th>
+<th class="head"><p>Bitstream (fasm2bels DCP)</p></th>
+<th class="head"><p>fasm2bels bitstream vs. DCP Bitstream</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>counter</p></td>
+<td><p>xc7k480t_board</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+</tbody>
+</table>
+<p>CI performance graph</p>
+<a class="reference internal image-reference" href="_images/xc7k480t-perf.svg"><img alt="_images/xc7k480t-perf.svg" src="_images/xc7k480t-perf.svg" width="400" /></a>
+</section>
+<section id="xc7vx980t">
+<h1>xc7vx980t<a class="headerlink" href="#xc7vx980t" title="Permalink to this headline">¶</a></h1>
+<p>Designs support status</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Board</p></th>
+<th class="head"><p>Synthesis</p></th>
+<th class="head"><p>Logical netlist</p></th>
+<th class="head"><p>Place &amp; route (Physical netlist)</p></th>
+<th class="head"><p>FASM generation</p></th>
+<th class="head"><p>Bitstream (FASM generator)</p></th>
+<th class="head"><p>Simulation</p></th>
+<th class="head"><p>Post-synthesis simulation</p></th>
+<th class="head"><p>Bitstream (Vivado)</p></th>
+<th class="head"><p>Vivado checkpoint</p></th>
+<th class="head"><p>Bitstream (DCP)</p></th>
+<th class="head"><p>FASM bitstream vs. DCP bitstream</p></th>
+<th class="head"><p>FASM (fasm2bels)</p></th>
+<th class="head"><p>Vivado checkpoint (fasm2bels)</p></th>
+<th class="head"><p>Bitstream (fasm2bels DCP)</p></th>
+<th class="head"><p>fasm2bels bitstream vs. DCP Bitstream</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>counter</p></td>
+<td><p>xc7vx980t_board</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>murax</p></td>
+<td><p>xc7vx980t_board</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+</tbody>
+</table>
+<p>CI performance graph</p>
+<a class="reference internal image-reference" href="_images/xc7vx980t-perf.svg"><img alt="_images/xc7vx980t-perf.svg" src="_images/xc7vx980t-perf.svg" width="400" /></a>
+</section>
+<section id="xc7z010">
+<h1>xc7z010<a class="headerlink" href="#xc7z010" title="Permalink to this headline">¶</a></h1>
+<p>Designs support status</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Board</p></th>
+<th class="head"><p>Synthesis</p></th>
+<th class="head"><p>Logical netlist</p></th>
+<th class="head"><p>Place &amp; route (Physical netlist)</p></th>
+<th class="head"><p>FASM generation</p></th>
+<th class="head"><p>Bitstream (FASM generator)</p></th>
+<th class="head"><p>Simulation</p></th>
+<th class="head"><p>Post-synthesis simulation</p></th>
+<th class="head"><p>Bitstream (Vivado)</p></th>
+<th class="head"><p>Vivado checkpoint</p></th>
+<th class="head"><p>Bitstream (DCP)</p></th>
+<th class="head"><p>FASM bitstream vs. DCP bitstream</p></th>
+<th class="head"><p>FASM (fasm2bels)</p></th>
+<th class="head"><p>Vivado checkpoint (fasm2bels)</p></th>
+<th class="head"><p>Bitstream (fasm2bels DCP)</p></th>
+<th class="head"><p>fasm2bels bitstream vs. DCP Bitstream</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>wire</p></td>
+<td><p>zybo</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+</tbody>
+</table>
+<p>CI performance graph</p>
+<a class="reference internal image-reference" href="_images/xc7z010-perf.svg"><img alt="_images/xc7z010-perf.svg" src="_images/xc7z010-perf.svg" width="400" /></a>
+</section>
+<section id="xczu7ev">
+<h1>xczu7ev<a class="headerlink" href="#xczu7ev" title="Permalink to this headline">¶</a></h1>
+<p>Designs support status</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Design</p></th>
+<th class="head"><p>Board</p></th>
+<th class="head"><p>Synthesis</p></th>
+<th class="head"><p>Logical netlist</p></th>
+<th class="head"><p>Place &amp; route (Physical netlist)</p></th>
+<th class="head"><p>FASM generation</p></th>
+<th class="head"><p>Bitstream (FASM generator)</p></th>
+<th class="head"><p>Simulation</p></th>
+<th class="head"><p>Post-synthesis simulation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>counter</p></td>
+<td><p>zcu104</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+</tr>
+<tr class="row-odd"><td><p>wire</p></td>
+<td><p>zcu104</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+<td><p>Not run</p></td>
+<td><p>Not run</p></td>
+<td><p>Ok</p></td>
+<td><p>Ok</p></td>
+</tr>
+</tbody>
+</table>
+<p>CI performance graph</p>
+<a class="reference internal image-reference" href="_images/xczu7ev-perf.svg"><img alt="_images/xczu7ev-perf.svg" src="_images/xczu7ev-perf.svg" width="400" /></a>
+</section>
+
+
+        </div>
+        <div class="side-doc-outline">
+            <div class="side-doc-outline--content"> 
+<div class="localtoc">
+    <p class="caption">
+      <span class="caption-text">Table Of Contents</span>
+    </p>
+    <ul>
+<li><a class="reference internal" href="#">LIFCL-40</a></li>
+<li><a class="reference internal" href="#xc7a100t">xc7a100t</a></li>
+<li><a class="reference internal" href="#xc7a200t">xc7a200t</a></li>
+<li><a class="reference internal" href="#xc7a35t">xc7a35t</a></li>
+<li><a class="reference internal" href="#xc7k480t">xc7k480t</a></li>
+<li><a class="reference internal" href="#xc7vx980t">xc7vx980t</a></li>
+<li><a class="reference internal" href="#xc7z010">xc7z010</a></li>
+<li><a class="reference internal" href="#xczu7ev">xczu7ev</a></li>
+</ul>
+
+</div>
+            </div>
+        </div>
+
+      <div class="clearer"></div>
+    </div><div class="pagenation">
+  </div>
+        <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+      <div class="mdl-logo">fpga-interchange-tests</div>
+      <div>
+        
+        
+      </div>
+    </div>
+
+    <div class="mdl-mini-footer__right-section">
+        <div>&copy; Copyright 2020, Various.</div>
+      <div>Generated by <a href="http://sphinx.pocoo.org/">Sphinx</a> 4.2.0 using <a href="https://github.com/myyasuda/sphinx_materialdesign_theme">sphinx_materialdesign_theme</a>.</div>
+    </div>
+</footer>
+        </main>
+    </div>
+  </body>
+</html>
